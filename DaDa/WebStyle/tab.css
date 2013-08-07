@@ -1,0 +1,43 @@
+dl,dt,dd
+{
+	list-style: none;
+}
+a
+{
+	cursor: pointer;
+}
+.tab
+{
+	font-weight: bold;
+	height: 26px;
+}
+
+.tab-hd
+{
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+}
+
+.tab-hd dt
+{
+	background-image: url(  "../images/iconBJ.png" );
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+	width: 121px;
+	list-style-type: none;
+}
+
+.tab-hd dt.active a
+{
+	color: #e7d2a3;
+}
+.tab-bd dd
+{
+	display: none;
+	border-top: 0 none;
+}

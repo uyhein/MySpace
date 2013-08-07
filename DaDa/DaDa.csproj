@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A82F8486-9210-41E9-893C-10820268A659}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaDa</RootNamespace>
+    <AssemblyName>DaDa</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllProductsShown.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForTest.aspx" />
+    <Content Include="MaintainCS.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebStyle\Common.css" />
+    <Content Include="XMLData\ChinaOfShell.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllProductsShown.aspx.cs">
+      <DependentUpon>AllProductsShown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllProductsShown.aspx.designer.cs">
+      <DependentUpon>AllProductsShown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChengPin.aspx.cs">
+      <DependentUpon>ChengPin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChengPin.aspx.designer.cs">
+      <DependentUpon>ChengPin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChenPinNan.aspx.cs">
+      <DependentUpon>ChenPinNan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChenPinNan.aspx.designer.cs">
+      <DependentUpon>ChenPinNan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChenPinNv.aspx.cs">
+      <DependentUpon>ChenPinNv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChenPinNv.aspx.designer.cs">
+      <DependentUpon>ChenPinNv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProductPipeline.cs" />
+    <Compile Include="Common\IProducyOperations.cs" />
+    <Compile Include="Common\ProductInfo.cs" />
+    <Compile Include="Common\ProductProvider.cs" />
+    <Compile Include="Common\StaticDataProvider.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution.aspx.cs">
+      <DependentUpon>Distribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution.aspx.designer.cs">
+      <DependentUpon>Distribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForTest.aspx.cs">
+      <DependentUpon>ForTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForTest.aspx.designer.cs">
+      <DependentUpon>ForTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HuangJin.aspx.cs">
+      <DependentUpon>HuangJin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HuangJin.aspx.designer.cs">
+      <DependentUpon>HuangJin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KJin.aspx.cs">
+      <DependentUpon>KJin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KJin.aspx.designer.cs">
+      <DependentUpon>KJin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LuoZhuan.aspx.cs">
+      <DependentUpon>LuoZhuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuoZhuan.aspx.designer.cs">
+      <DependentUpon>LuoZhuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LuoZhuan20.aspx.cs">
+      <DependentUpon>LuoZhuan20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuoZhuan20.aspx.designer.cs">
+      <DependentUpon>LuoZhuan20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LuoZhuan30.aspx.cs">
+      <DependentUpon>LuoZhuan30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuoZhuan30.aspx.designer.cs">
+      <DependentUpon>LuoZhuan30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainCS.aspx.cs">
+      <DependentUpon>MaintainCS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainCS.aspx.designer.cs">
+      <DependentUpon>MaintainCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeShe.aspx.cs">
+      <DependentUpon>TeShe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeShe.aspx.designer.cs">
+      <DependentUpon>TeShe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserGuides.aspx.cs">
+      <DependentUpon>UserGuides.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserGuides.aspx.designer.cs">
+      <DependentUpon>UserGuides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="ChengPin.aspx" />
+    <Content Include="ChenPinNan.aspx" />
+    <Content Include="ChenPinNv.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Distribution.aspx" />
+    <Content Include="great\bl201.jpg" />
+    <Content Include="great\ct134.jpg" />
+    <Content Include="great\ct137.jpg" />
+    <Content Include="great\ct139.jpg" />
+    <Content Include="great\ct27.jpg" />
+    <Content Include="great\ct37.jpg" />
+    <Content Include="great\ct41.jpg" />
+    <Content Include="great\ct60.jpg" />
+    <Content Include="great\ct65.jpg" />
+    <Content Include="great\ct75.jpg" />
+    <Content Include="great\ct81.jpg" />
+    <Content Include="great\or105.jpg" />
+    <Content Include="great\sb.gif" />
+    <Content Include="great\sb.png" />
+    <Content Include="great\sc.gif" />
+    <Content Include="great\sc.png" />
+    <Content Include="great\sf48.jpg" />
+    <Content Include="great\sf53.jpg" />
+    <Content Include="great\sl.gif" />
+    <Content Include="great\sl.png" />
+    <Content Include="great\sr.gif" />
+    <Content Include="great\sr.png" />
+    <Content Include="HuangJin.aspx" />
+    <Content Include="HuoDong\POP.jpg" />
+    <Content Include="HuoDong\亚克力单页.jpg" />
+    <Content Include="HuoDong\亚克力单页2.jpg" />
+    <Content Include="HuoDong\亚克力单页3.jpg" />
+    <Content Include="HuoDong\亚克力单页4.jpg" />
+    <Content Include="HuoDong\亚克力单页5.jpg" />
+    <Content Include="HuoDong\亚克力单页6.jpg" />
+    <Content Include="HuoDong\亚克力单页7.jpg" />
+    <Content Include="HuoDong\新单页.jpg" />
+    <Content Include="HuoDong\新单页2.jpg" />
+    <Content Include="imageshow.swf" />
+    <Content Include="images\2years.jpg" />
+    <Content Include="images\2years_s.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\big_bottom.png" />
+    <Content Include="images\big_left.png" />
+    <Content Include="images\big_right.png" />
+    <Content Include="images\big_top.png" />
+    <Content Include="images\bn.jpg" />
+    <Content Include="images\bn_s.jpg" />
+    <Content Include="images\bodyBg.jpg" />
+    <Content Include="images\bodybg.png" />
+    <Content Include="images\bottomBJ2012130.jpg" />
+    <Content Include="images\contentBJ.gif" />
+    <Content Include="images\daohang01.jpg" />
+    <Content Include="images\foot1.png" />
+    <Content Include="images\gobottom.gif" />
+    <Content Include="images\gobottom.png" />
+    <Content Include="images\gongsi.jpg" />
+    <Content Include="images\gotop.gif" />
+    <Content Include="images\gotop.png" />
+    <Content Include="images\iconBJ.png" />
+    <Content Include="images\iconBJ01.png" />
+    <Content Include="images\index\1.jpg" />
+    <Content Include="images\index\101克拉.jpg" />
+    <Content Include="images\index\2.jpg" />
+    <Content Include="images\index\wuxianai.jpg" />
+    <Content Include="images\index\xinai.jpg" />
+    <Content Include="images\index\xinhua.jpg" />
+    <Content Include="images\index\yonghengai.jpg" />
+    <Content Include="images\jiameng.jpg" />
+    <Content Include="images\lanhai.jpg" />
+    <Content Include="images\lanhai_s.jpg" />
+    <Content Include="images\lianxi.png" />
+    <Content Include="images\lightbox-blank.gif" />
+    <Content Include="images\lightbox-btn-close.gif" />
+    <Content Include="images\lightbox-btn-next.gif" />
+    <Content Include="images\lightbox-btn-prev.gif" />
+    <Content Include="images\lightbox-ico-loading.gif" />
+    <Content Include="images\logo01.png" />
+    <Content Include="images\newsBJ1.png" />
+    <Content Include="images\niepan.jpg" />
+    <Content Include="images\niepan_s.jpg" />
+    <Content Include="images\opacity_70.png" />
+    <Content Include="images\sc.png" />
+    <Content Include="images\shoppingBJ01.png" />
+    <Content Include="images\shoppingBJ02.png" />
+    <Content Include="images\sl.png" />
+    <Content Include="images\sr.png" />
+    <Content Include="images\vipBJ01.png" />
+    <Content Include="images\vipBJ02.png" />
+    <Content Include="images\webBJ2.jpg" />
+    <Content Include="images\webBJ3.jpg" />
+    <Content Include="images\webBJ4.jpg" />
+    <Content Include="images\xingchen.jpg" />
+    <Content Include="images\xingchen_s.jpg" />
+    <Content Include="images\zhaopin.png" />
+    <Content Include="images\ZuanJieContentBg.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\common.js" />
+    <Content Include="js\imageflow.js" />
+    <Content Include="js\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery.lightbox-0.5.js" />
+    <Content Include="js\jquery.mergingimage.js" />
+    <Content Include="js\jquery.tabs.js" />
+    <Content Include="js\Slide.js" />
+    <Content Include="js\tab.js" />
+    <Content Include="KJin.aspx" />
+    <Content Include="LuoZhuan.aspx" />
+    <Content Include="LuoZhuan20.aspx" />
+    <Content Include="LuoZhuan30.aspx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="pintu\1.jpg" />
+    <Content Include="pintu\10.jpg" />
+    <Content Include="pintu\11.jpg" />
+    <Content Include="pintu\12.jpg" />
+    <Content Include="pintu\13.jpg" />
+    <Content Include="pintu\14.jpg" />
+    <Content Include="pintu\15.jpg" />
+    <Content Include="pintu\16.jpg" />
+    <Content Include="pintu\17.jpg" />
+    <Content Include="pintu\18.jpg" />
+    <Content Include="pintu\19.jpg" />
+    <Content Include="pintu\2.jpg" />
+    <Content Include="pintu\20.jpg" />
+    <Content Include="pintu\21.jpg" />
+    <Content Include="pintu\22.jpg" />
+    <Content Include="pintu\23.jpg" />
+    <Content Include="pintu\24.jpg" />
+    <Content Include="pintu\3.jpg" />
+    <Content Include="pintu\4.jpg" />
+    <Content Include="pintu\5.jpg" />
+    <Content Include="pintu\6.jpg" />
+    <Content Include="pintu\7.jpg" />
+    <Content Include="pintu\8.jpg" />
+    <Content Include="pintu\9.jpg" />
+    <Content Include="pintu\loader.gif" />
+    <Content Include="pintu\next.png" />
+    <Content Include="pintu\prev.png" />
+    <Content Include="pintu\thumbs\1.jpg" />
+    <Content Include="pintu\thumbs\10.jpg" />
+    <Content Include="pintu\thumbs\11.jpg" />
+    <Content Include="pintu\thumbs\12.jpg" />
+    <Content Include="pintu\thumbs\13.jpg" />
+    <Content Include="pintu\thumbs\14.jpg" />
+    <Content Include="pintu\thumbs\15.jpg" />
+    <Content Include="pintu\thumbs\16.jpg" />
+    <Content Include="pintu\thumbs\17.jpg" />
+    <Content Include="pintu\thumbs\18.jpg" />
+    <Content Include="pintu\thumbs\19.jpg" />
+    <Content Include="pintu\thumbs\2.jpg" />
+    <Content Include="pintu\thumbs\20.jpg" />
+    <Content Include="pintu\thumbs\21.jpg" />
+    <Content Include="pintu\thumbs\22.jpg" />
+    <Content Include="pintu\thumbs\23.jpg" />
+    <Content Include="pintu\thumbs\24.jpg" />
+    <Content Include="pintu\thumbs\3.jpg" />
+    <Content Include="pintu\thumbs\4.jpg" />
+    <Content Include="pintu\thumbs\5.jpg" />
+    <Content Include="pintu\thumbs\6.jpg" />
+    <Content Include="pintu\thumbs\7.jpg" />
+    <Content Include="pintu\thumbs\8.jpg" />
+    <Content Include="pintu\thumbs\9.jpg" />
+    <Content Include="Product\18185_1_.jpg" />
+    <Content Include="Product\18185_2_.jpg" />
+    <Content Include="Product\18185_4_.jpg" />
+    <Content Include="Product\huangjin\24Kdiaozhui1.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui10.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui2.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui3.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui4.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui5.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui6.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui7.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui8.jpg" />
+    <Content Include="Product\huangjin\24kdiaozhui9.jpg" />
+    <Content Include="Product\huangjin\24kerzhui1.jpg" />
+    <Content Include="Product\huangjin\24kerzhui2.jpg" />
+    <Content Include="Product\huangjin\24kshoulian1.jpg" />
+    <Content Include="Product\huangjin\24kshoulian2.jpg" />
+    <Content Include="Product\huangjin\24kshoulian3.jpg" />
+    <Content Include="Product\kjin\D0190-1.61G-0.792.jpg" />
+    <Content Include="Product\kjin\D02646-1.1G-0.327CT-1.JPG" />
+    <Content Include="Product\kjin\D02646-1.1G-D0.3-d0.036-￥2358.jpg" />
+    <Content Include="Product\kjin\D02878-1.37G-0.239CT-￥1507.jpg" />
+    <Content Include="Product\kjin\D02948-1.38G-0.237CT-1-1.JPG" />
+    <Content Include="Product\kjin\D02948-1.38G-D0.25-d0.04-￥1667.jpg" />
+    <Content Include="Product\kjin\DO2933-1.35G-D0.18-d0.03-￥1276.jpg" />
+    <Content Include="Product\kjin\HB0010-1.98G-0.304CT-￥2512.jpg" />
+    <Content Include="Product\kjin\HB0019-1G-0.273CT-￥1558.jpg" />
+    <Content Include="Product\kjin\HB0034-0.87G-0.233CT-￥1340.jpg" />
+    <Content Include="Product\kjin\HB0057-1.5G-D.50-d0.048-￥6068.jpg" />
+    <Content Include="Product\kjin\HB0074-1.22G-0.247CT-￥1649.jpg" />
+    <Content Include="Product\kjin\HB0112-0.87G-0.24CT-￥1522.jpg" />
+    <Content Include="Product\kjin\HB0114-0.79G-0.517CT.jpg" />
+    <Content Include="Product\kjin\HB0114-0.7G-D0.33-d0.05-￥2430.jpg" />
+    <Content Include="Product\kjin\HB0286-1.27G-D0.10-d0.036-￥747.jpg" />
+    <Content Include="Product\kjin\HB0287-1.23G-D0.15-d0.03-￥998.jpg" />
+    <Content Include="Product\kjin\HB0347-1.78G-D0.50-d0.056-￥6162.jpg" />
+    <Content Include="Product\kjin\HB0395-1.33G-D0.10-d0.30-d0.168-￥1960.jpg" />
+    <Content Include="Product\kjin\HB0401-1.73G-0.231CT-￥1562.jpg" />
+    <Content Include="Product\kjin\HB049B-1.35G-0.513-￥6040.jpg" />
+    <Content Include="Product\kjin\HB537-1.26G-0.506CT-￥5874.jpg" />
+    <Content Include="Product\kjin\HB552-1.11G-0.254CT-￥1520.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 1120.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 1148.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 1260.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 1526.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 868.jpg" />
+    <Content Include="Product\luojie\18kjiezhi 875.jpg" />
+    <Content Include="Product\luojie\18kjizhi 1372.jpg" />
+    <Content Include="Product\luojie\G750jiezhi 700.jpg" />
+    <Content Include="Product\luojie\G750kjiezhi 686.jpg" />
+    <Content Include="Product\luozuan\luozuan.jpg" />
+    <Content Include="Product\luozuan\luozuan1.jpg" />
+    <Content Include="Product\luozuan\zuan1.jpg" />
+    <Content Include="Product\luozuan\zuan10.jpg" />
+    <Content Include="Product\luozuan\zuan2.jpg" />
+    <Content Include="Product\luozuan\zuan3.jpg" />
+    <Content Include="Product\luozuan\zuan4.jpg" />
+    <Content Include="Product\luozuan\zuan5.jpg" />
+    <Content Include="Product\luozuan\zuan6.jpg" />
+    <Content Include="Product\luozuan\zuan8.jpg" />
+    <Content Include="Product\luozuan\zuan9.jpg" />
+    <Content Include="Product\nvjie\HA0004-2.68G-0.234CT-￥1831.jpg" />
+    <Content Include="Product\nvjie\HA0159-1.45G-0.332CT-￥2548.jpg" />
+    <Content Include="Product\nvjie\HA0361-2.01g-D0.242ct-1704.jpg" />
+    <Content Include="Product\nvjie\HA0366-1.83g-D0.334ct-2654.jpg" />
+    <Content Include="Product\nvjie\HA0399-1.85G-D0.259ct-1696.jpg" />
+    <Content Include="Product\nvjie\HA0404-1.79g-D0.309-2451.jpg" />
+    <Content Include="Product\nvjie\HA0407-1.35G-0.233CT-￥1468.jpg" />
+    <Content Include="Product\nvjie\HA0463-2.16g-D0.161ct-1144.jpg" />
+    <Content Include="Product\nvjie\HA0477-1.41G-0.257CT-￥1596.jpg" />
+    <Content Include="Product\nvjie\HA0586-1.72g-D0.302ct-2402.jpg" />
+    <Content Include="Product\nvjie\HA0589-1.87G-D0.329ct-2588.jpg" />
+    <Content Include="Product\nvjie\HA0668-1.8G-D0.327-2563.jpg" />
+    <Content Include="Product\nvjie\HA0672-1.75g-0.312ct-2441.jpg" />
+    <Content Include="Product\nvjie\HA0875-1.99G-0.301CT-￥2498.jpg" />
+    <Content Include="Product\nvjie\HA0906-2.17g-0.304ct-￥2563.jpg" />
+    <Content Include="Product\nvjie\HA0917-1.71G-0.3CT-￥2414.jpg" />
+    <Content Include="Product\nvjie\HA1030-1.98G-0.308CT-￥2538.jpg" />
+    <Content Include="Product\nvjie\HA1033-1.58G-0.23CT-￥1517.jpg" />
+    <Content Include="Product\nvjie\HH3924-2.29G-0.312CT-￥2639.jpg" />
+    <Content Include="Product\nvjie\N03925-2.25G-0.564CT-￥6200.TIF" />
+    <Content Include="Product\nvjie\NO3572-1.85G-0.308CT-￥2489.TIF" />
+    <Content Include="Product\untitled.bmp" />
+    <Content Include="Product\untitled1.bmp" />
+    <Content Include="Product\untitled2.bmp" />
+    <Content Include="Service.aspx" />
+    <Content Include="TeShe.aspx" />
+    <Content Include="trees\t1.jpg" />
+    <Content Include="trees\t10.jpg" />
+    <Content Include="trees\t11.jpg" />
+    <Content Include="trees\t12.jpg" />
+    <Content Include="trees\t13.jpg" />
+    <Content Include="trees\t14.jpg" />
+    <Content Include="trees\t15.jpg" />
+    <Content Include="trees\t16.jpg" />
+    <Content Include="trees\t17.jpg" />
+    <Content Include="trees\t18.jpg" />
+    <Content Include="trees\t19.jpg" />
+    <Content Include="trees\t2.jpg" />
+    <Content Include="trees\t3.jpg" />
+    <Content Include="trees\t4.jpg" />
+    <Content Include="trees\t5.jpg" />
+    <Content Include="trees\t6.jpg" />
+    <Content Include="trees\t7.jpg" />
+    <Content Include="trees\t8.jpg" />
+    <Content Include="trees\t9.jpg" />
+    <Content Include="UserGuides.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebStyle\imageflow.css" />
+    <Content Include="WebStyle\jquery.lightbox-0.5.css" />
+    <Content Include="WebStyle\mergingimage.css" />
+    <Content Include="WebStyle\scroll.css" />
+    <Content Include="WebStyle\tab.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7758</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

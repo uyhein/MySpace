@@ -1,0 +1,68 @@
+﻿
+.im_wrapper div
+{
+	left: -500px;
+	width: 125px;
+	height: 90px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	cursor: pointer;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.im_wrapper div img
+{
+	float: left;
+	width: 115px;
+	height: 80px;
+	margin: 5px 0px 0px 5px;
+}
+.im_loading
+{
+	opacity: 0.7;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -35px 0px 0px -35px;
+	background: #fff url(../pintu/loader.gif) no-repeat center center;
+	width: 70px;
+	height: 70px;
+	z-index: 9999;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	filter: alpha(opacity=70);
+}
+.im_next, .im_prev
+{
+	opacity: 0.7;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	z-index: 1000;
+	filter: alpha(opacity=70);
+}
+.im_next:hover, .im_prev:hover
+{
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.im_next
+{
+	background:  url(../pintu/next.png) no-repeat center center;
+	right: -50px; /*10 to show*/
+}
+.im_prev
+{
+	background:  url(../pintu/prev.png) no-repeat center center;
+	left: -50px; /*10 to show*/
+}
